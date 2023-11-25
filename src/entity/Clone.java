@@ -77,7 +77,7 @@ public class Clone extends Entity{
 //			return;
 		}
 		else {
-		if(st < 600 && gp.movXClone[gp.stt][st] != null) {
+		if(st < 6000000 && gp.movXClone[gp.stt][st] != null) {
 			direction = gp.movXClone[gp.stt][st];
 			directionY = gp.movYClone[gp.stt][st];
 			st ++;

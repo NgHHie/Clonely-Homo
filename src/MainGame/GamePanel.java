@@ -49,8 +49,8 @@ public class GamePanel extends JPanel implements Runnable{
 	public Player player = new Player(this, keyH);
 	public Clone[] clone = new Clone[5];
 	public SuperObject obj[] = new SuperObject[20];
-	public String[][] movXClone = new String[5][600];
-	public String[][] movYClone = new String[5][600];
+	public String[][] movXClone = new String[5][6000000];
+	public String[][] movYClone = new String[5][6000000];
 	
 	
 	public BufferedImage img;
@@ -201,7 +201,7 @@ public class GamePanel extends JPanel implements Runnable{
 				clone[i].update();
 			}
 		}
-		System.out.println(obj[0].collisionOnY + " " + obj[1].collisionOnY);
+
 		for(int i=0; i<20; i++) {
 			if(obj[i] != null && upobj[i] == false) {
 				sttobj = i;

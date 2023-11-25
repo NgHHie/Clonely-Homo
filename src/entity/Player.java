@@ -17,7 +17,6 @@ public class Player extends Entity {
 	private int admit;
 	private int cnt;
 	private int[] st = new int[5];
-	private boolean startMove;
 
 //	public final float screenX, screenY;
 
@@ -30,7 +29,6 @@ public class Player extends Entity {
 		this.admit = 0;
 		this.cnt = 0;
 		this.dead = false;
-		this.startMove = false;
 		
 		this.aniTick = 0;
 		this.aniIndex = 0;
@@ -86,13 +84,12 @@ public class Player extends Entity {
 		}
 		if(keyH != null) {
 			if (admit == 0) {
-				if (keyH.callClone == true && cnt < 5 && startMove == true) {
+				if (keyH.callClone == true && cnt < 5) {
 					cnt++;
 					collisionOn = false;
 					Arrays.fill(collisionOn2, false);
 					callClone();
-					startMove = false;
-					st[cnt - 1] = 600;
+					st[cnt - 1] = 6000000;
 					admit = 30;
 				}
 			} else if (admit > 0)
@@ -107,7 +104,6 @@ public class Player extends Entity {
 					}
 					direction = "";
 				}
-				startMove = true;
 			}
 	
 			if (direction == null)
@@ -130,7 +126,7 @@ public class Player extends Entity {
 				direction = "right";
 			}
 	
-			if (cnt < 5 && st[cnt] < 600) {
+			if (cnt < 5 && st[cnt] < 6000000) {
 				gp.movXClone[cnt][st[cnt]] = direction;
 				gp.movYClone[cnt][st[cnt]] = directionY;
 				st[cnt]++;
