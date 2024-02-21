@@ -200,19 +200,5 @@ public class Player extends Entity {
 			gp.moveobj[i] = false;
 		}
 	}
-	
-
-//	public void draw(Graphics2D g2) {
-//		
-//		if(direction.compareTo("") == 0 || direction == null) anicondition = 0;
-//		else if(direction.compareTo("left") == 0) anicondition = 1;
-//		else if(direction.compareTo("right") == 0) anicondition = 2;
-//		
-//		if(dead == true) anicondition = 3;
-//		updateAnimationTick();
-//		System.out.println(anicondition);
-//		
-//		g2.drawImage(animation[anicondition][aniIndex], worldX, worldY, gp.tileSize, gp.tileSize, null);
-//	}
 
 }

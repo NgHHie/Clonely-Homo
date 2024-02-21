@@ -339,8 +339,6 @@ public class CollisionChecker {
 					break;
 				}
 				
-				
-
 				entity.solidArea.x = tmpx;
 				entity.solidArea.y = tmpy;
 				gp.obj[i].solidArea.x = gp.obj[i].solidAreaDefaultX;

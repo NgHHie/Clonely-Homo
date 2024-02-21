@@ -33,13 +33,13 @@ public class AssetSetter {
 		switch (level) {
 		case 1:
 			for(SuperObject x:gp.obj) x = null; 
-			gp.obj[0] = new Key(gp);
-			gp.obj[0].worldX = 8 * gp.tileSize;
-			gp.obj[0].worldY = 2 * gp.tileSize - 1;
-			
-			gp.obj[1] = new Key(gp);
-			gp.obj[1].worldX = 6 * gp.tileSize;
-			gp.obj[1].worldY = 6 * gp.tileSize - 1;
+//			gp.obj[0] = new Key(gp);
+//			gp.obj[0].worldX = 8 * gp.tileSize;
+//			gp.obj[0].worldY = 2 * gp.tileSize - 1;
+//			
+//			gp.obj[1] = new Key(gp);
+//			gp.obj[1].worldX = 6 * gp.tileSize;
+//			gp.obj[1].worldY = 8 * gp.tileSize - 1;
 			
 //			gp.obj[2] = new Button(gp);
 //			gp.obj[2].worldX = 6 * gp.tileSize;
